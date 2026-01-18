@@ -95,6 +95,99 @@ rss:
       url: "https://finance.yahoo.com/news/rssindex"
       enabled: false                  # 禁用
 
+    # ═══════════════════════════════════════════════════════════════
+    # AI 行业资讯源
+    # ═══════════════════════════════════════════════════════════════
+    
+    # 国际 AI 公司/平台
+    - id: "huggingface-blog"
+      name: "Hugging Face Blog"
+      url: "https://huggingface.co/blog/feed.xml"
+      max_age_days: 7                 # AI 博客更新较慢，保留7天
+    
+    - id: "openai-blog"
+      name: "OpenAI Blog"
+      url: "https://openai.com/blog/rss.xml"
+      max_age_days: 7
+    
+    - id: "deepmind-blog"
+      name: "Google DeepMind Blog"
+      url: "https://deepmind.google/blog/rss.xml"
+      max_age_days: 7
+    
+    - id: "anthropic-news"
+      name: "Anthropic News"
+      url: "https://www.anthropic.com/news/rss.xml"
+      max_age_days: 7
+    
+    - id: "meta-ai-blog"
+      name: "Meta AI Blog"
+      url: "https://ai.meta.com/blog/rss/"
+      max_age_days: 7
+    
+    - id: "midjourney-updates"
+      name: "Midjourney Updates"
+      url: "https://docs.midjourney.com/feed.xml"
+      max_age_days: 7
+      enabled: false                  # Midjourney 无官方 RSS，需手动验证
+    
+    - id: "runway-blog"
+      name: "Runway Blog"
+      url: "https://runwayml.com/blog/rss.xml"
+      max_age_days: 7
+      enabled: false                  # 需验证 URL 有效性
+    
+    # 中文 AI 媒体
+    - id: "jiqizhixin"
+      name: "机器之心"
+      url: "https://rsshub.app/jiqizhixin/latest"
+      max_age_days: 3
+    
+    - id: "qbitai"
+      name: "量子位"
+      url: "https://rsshub.app/qbitai"
+      max_age_days: 3
+    
+    - id: "aibase"
+      name: "AIbase"
+      url: "https://www.aibase.com/zh/rss.xml"
+      max_age_days: 3
+      enabled: false                  # 需验证 URL 有效性
+    
+    # 英文 AI 媒体/社区
+    - id: "reddit-machinelearning"
+      name: "Reddit r/MachineLearning"
+      url: "https://www.reddit.com/r/MachineLearning/top/.rss?t=day"
+      max_age_days: 1                 # Reddit 更新频繁，只保留1天
+    
+    - id: "the-batch"
+      name: "The Batch (by Andrew Ng)"
+      url: "https://www.deeplearning.ai/the-batch/rss/"
+      max_age_days: 7
+      enabled: false                  # 需验证 URL 有效性
+    
+    - id: "therundown-ai"
+      name: "TheRundown AI"
+      url: "https://www.therundown.ai/feed"
+      max_age_days: 3
+      enabled: false                  # 需验证 URL 有效性
+    
+    - id: "import-ai"
+      name: "Import AI"
+      url: "https://jack-clark.net/feed/"
+      max_age_days: 7
+    
+    - id: "towards-data-science"
+      name: "Towards Data Science"
+      url: "https://towardsdatascience.com/feed"
+      max_age_days: 1                 # 更新频繁
+    
+    - id: "modelscope"
+      name: "ModelScope"
+      url: "https://modelscope.cn/feed.xml"
+      max_age_days: 7
+      enabled: false                  # 需验证 URL 有效性
+
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"

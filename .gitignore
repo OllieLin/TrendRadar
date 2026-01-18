@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+.codebuddy/
+output/*.db
+output/*.txt
+output/*.html
+
+# Dependency lock files (optional, uncomment if needed)
+# uv.lock
+# poetry.lock
+
+# Local configuration (if you want to keep secrets out of git)
+# config/config.yaml
+
+# Logs
+*.log
