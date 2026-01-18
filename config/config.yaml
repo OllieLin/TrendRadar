@@ -126,18 +126,13 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
-      # max_age_days: 1               # 示例：只推送1天内的文章
+      max_age_days: 1                 # 示例：只推送1天内的文章
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
-      # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
+      max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
-
     # ═══════════════════════════════════════════════════════════════
     # AI 行业资讯源
     # ═══════════════════════════════════════════════════════════════
@@ -160,42 +155,27 @@ rss:
     
     - id: "anthropic-news"
       name: "Anthropic News"
-      url: "https://www.anthropic.com/news/rss.xml"
+      url: "https://www.anthropic.com/news"
       max_age_days: 7
     
     - id: "meta-ai-blog"
       name: "Meta AI Blog"
-      url: "https://ai.meta.com/blog/rss/"
+      url: "https://ai.meta.com/blog/"
       max_age_days: 7
     
-    - id: "midjourney-updates"
-      name: "Midjourney Updates"
-      url: "https://docs.midjourney.com/feed.xml"
-      max_age_days: 7
-      enabled: false                  # Midjourney 无官方 RSS，需手动验证
-    
-    - id: "runway-blog"
-      name: "Runway Blog"
-      url: "https://runwayml.com/blog/rss.xml"
-      max_age_days: 7
-      enabled: false                  # 需验证 URL 有效性
     
     # 中文 AI 媒体
     - id: "jiqizhixin"
       name: "机器之心"
-      url: "https://rsshub.app/jiqizhixin/latest"
+      url: "https://www.jiqizhixin.com/articles"
       max_age_days: 3
     
-    - id: "qbitai"
-      name: "量子位"
-      url: "https://rsshub.app/qbitai"
-      max_age_days: 3
     
     - id: "aibase"
       name: "AIbase"
-      url: "https://www.aibase.com/zh/rss.xml"
+      url: "https://news.aibase.com/zh/news"
       max_age_days: 3
-      enabled: false                  # 需验证 URL 有效性
+      enabled: true                  # 需验证 URL 有效性
     
     # 英文 AI 媒体/社区
     - id: "reddit-machinelearning"
@@ -203,15 +183,10 @@ rss:
       url: "https://www.reddit.com/r/MachineLearning/top/.rss?t=day"
       max_age_days: 1                 # Reddit 更新频繁，只保留1天
     
-    - id: "the-batch"
-      name: "The Batch (by Andrew Ng)"
-      url: "https://www.deeplearning.ai/the-batch/rss/"
-      max_age_days: 7
-      enabled: false                  # 需验证 URL 有效性
     
     - id: "therundown-ai"
       name: "TheRundown AI"
-      url: "https://www.therundown.ai/feed"
+      url: "https://www.therundown.ai"
       max_age_days: 3
       enabled: false                  # 需验证 URL 有效性
     
@@ -227,7 +202,7 @@ rss:
     
     - id: "modelscope"
       name: "ModelScope"
-      url: "https://modelscope.cn/feed.xml"
+      url: "https://modelscope.cn/home"
       max_age_days: 7
       enabled: false                  # 需验证 URL 有效性
 
